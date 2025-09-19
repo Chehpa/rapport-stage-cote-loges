@@ -4,8 +4,18 @@
   <meta charset="utf-8" />
   <title>Rapport de Stage — Côté Loges</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <!-- Police + Icônes (CDN, fiable sur GitHub Pages) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+  <!-- TON CSS local (assure-toi d’avoir créé assets/css/main.css) -->
   <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+
+  <!-- Fallback si JS désactivé (optionnel) -->
+  <noscript><style>body.is-preload *{animation:none!important;transition:none!important}</style></noscript>
 </head>
 
 <body class="landing is-preload">
@@ -36,6 +46,7 @@
         <li><a href="#analyse">Analyse</a></li>
         <li><a href="#auto">Parcours</a></li>
         <li><a href="#cta">Contact</a></li>
+        <li><a href="annexes.html">Annexes</a></li>
       </ul>
     </nav>
 
@@ -54,21 +65,27 @@
       <div class="inner">
         <header class="major">
           <h2>Côté Loges — L’entreprise</h2>
-          <p>Magasin familial fondé à La Baule, repris par Vincent Carnus et Clément Richer. 
-             Anciennement orienté bijoux et vinyles, il s’est réinventé en spécialiste du mobilier haut de gamme 
-             avec un positionnement unique : qualité et originalité à prix compétitifs.</p>
+          <p>Magasin familial à La Baule, repris par Vincent Carnus et Clément Richer.
+             Anciennement orienté bijoux et vinyles, l’enseigne s’est réinventée en spécialiste du
+             mobilier haut de gamme : qualité et originalité à prix compétitifs.</p>
         </header>
+
         <ul class="icons major">
           <li><span class="icon solid fa-gem major style1"><span class="label">Qualité</span></span></li>
           <li><span class="icon solid fa-store major style2"><span class="label">Magasin</span></span></li>
           <li><span class="icon solid fa-users major style3"><span class="label">Clientèle</span></span></li>
         </ul>
+
         <p>
-          Clientèle variée : habitués de la région, Nantais, Parisiens et étrangers, 
-          avec une forte proportion de classes supérieures.  
-          Le magasin compte 3 étages, offrant une grande profondeur et une mise en valeur soignée des produits.  
-          La stratégie repose sur l’achat-revente : fournisseurs européens et asiatiques, réception, 
-          placement stratégique, étiquettes créées sur Canva, gestion de stock et mise en ligne via PrestaShop.
+          Clientèle variée : habitants de la région, Nantais, Parisiens et étrangers, avec une forte proportion
+          de classes supérieures. Magasin sur 3 étages (grande profondeur), mise en valeur soignée.
+          Modèle achat-revente : fournisseurs Europe/Asie, réception, implantation stratégique, étiquettes Canva,
+          suivi de stock, mise en ligne via PrestaShop.
+        </p>
+
+        <p class="meta">
+          Tuteur : <strong>Vincent Carnus</strong> — Co-gérants : <strong>Vincent Carnus</strong> &amp; <strong>Clément Richer</strong>.<br/>
+          Site : <a href="https://cotesloges.fr" target="_blank" rel="noopener">cotesloges.fr</a>
         </p>
       </div>
     </section>
@@ -83,27 +100,27 @@
           <li>
             <span class="icon solid fa-key"></span>
             <h3>Autonomie</h3>
-            <p>Dès la 2ᵉ semaine, ouverture/fermeture du magasin, organisation et mise en valeur des produits, 
-               en totale autonomie malgré la valeur importante des stocks.</p>
+            <p>Dès la 2ᵉ semaine : ouverture/fermeture, organisation et mise en valeur, en autonomie
+               malgré la valeur importante des stocks et la configuration (3 étages, nombreuses portes).</p>
           </li>
           <li>
             <span class="icon solid fa-chart-line"></span>
-            <h3>Veille concurrentielle</h3>
-            <p>Mise en place d’un Excel automatisé (Python + ChatGPT) pour comparer les prix avec les concurrents 
-               directs (mêmes fournisseurs) et indirects (Amazon, Ikea, Maisons du Monde, artisans français).</p>
+            <h3>Veille prix & marché</h3>
+            <p>Excel automatisé (Python + ChatGPT) : suivi des prix concurrents directs (mêmes fournisseurs)
+               et indirects (Amazon, Ikea, Maisons du Monde, artisans). Résultat : ajustements tarifaires étayés.</p>
           </li>
           <li>
             <span class="icon solid fa-bullhorn"></span>
-            <h3>Communication</h3>
-            <p>Création de contenus dynamiques : photos, vidéos, montages avec musique et retouches (Photoshop, Lightroom).  
-               +50 % abonnés sur Instagram/Facebook, +300 % de vues (+500 % de trafic web grâce aux blogs et ajouts produits).</p>
+            <h3>Contenu & Réseaux</h3>
+            <p>Photos/vidéos, montages dynamiques (musique, cuts), retouches (Photoshop/Lightroom).
+               ~+50&nbsp;% d’abonnés, +300&nbsp;% de vues. Impact positif sur la notoriété locale.</p>
           </li>
           <li>
             <span class="icon solid fa-pen-nib"></span>
             <h3>SEO & Blog</h3>
-            <p>Rédaction d’une cinquantaine de brouillons d’articles techniques et tendances pour alimenter le blog.  
-               Recherche de mots-clés stratégiques → très bon positionnement sur “tables en céramique” 
-               (≈100 visites supplémentaires/mois).</p>
+            <p>~50 brouillons d’articles (entretien, tendances), calendrier éditorial.
+               Ciblage “tables en céramique” → ~+100 visites/mois supplémentaires.
+               Trafic web global en forte hausse via ajouts produits + articles.</p>
           </li>
         </ul>
       </div>
@@ -115,25 +132,28 @@
         <header class="major">
           <h2>Analyse critique</h2>
         </header>
+
         <section class="spotlight">
           <div class="content">
             <h3>Forces</h3>
-            <p>Une entreprise flexible, capable d’adapter son offre et d’innover (réseaux sociaux, SEO, sourcing international).  
-               Confiance accordée très tôt → expérience riche et responsabilisante.</p>
+            <p>Souplesse commerciale, qualité de sélection, confiance et responsabilités accordées.
+               Accélération digitale (Instagram/Facebook, PrestaShop, SEO ciblé).</p>
           </div>
         </section>
+
         <section class="spotlight">
           <div class="content">
-            <h3>Points à améliorer</h3>
-            <p>Visibilité limitée face aux grands acteurs.  
-               Besoin de consolider la stratégie digitale, notamment pour convertir les visites web en ventes.</p>
+            <h3>Axes d’amélioration</h3>
+            <p>Gagner en visibilité face aux grands acteurs. Mieux convertir le trafic web en ventes (retargeting,
+               fiches produit enrichies, preuves sociales, offres limitées).</p>
           </div>
         </section>
+
         <section class="spotlight">
           <div class="content">
             <h3>Transformation digitale</h3>
-            <p>Progression grâce à PrestaShop, Instagram/Facebook, SEO ciblé.  
-               Opportunité de renforcer encore la publicité en ligne (Google Ads, retargeting, contenus sponsorisés).</p>
+            <p>Progression notable (contenu + SEO). Pistes : Google Ads local, campagnes Meta
+               géolocalisées, UGC, partenariats déco, optimisation du catalogue (schéma, FAQ, avis).</p>
           </div>
         </section>
       </div>
@@ -146,12 +166,10 @@
           <h2>Mon parcours et compétences acquises</h2>
         </header>
         <p>
-          Stage marquant par la confiance et l’autonomie accordées.  
-          Développement de compétences techniques (Excel, SEO, montage vidéo, réseaux sociaux) et humaines (autonomie, 
-          relation client, gestion de responsabilités).  
-          Retour des gérants : rigueur et efficacité reconnues, mais besoin de développer une personnalité plus rayonnante 
-          pour dynamiser la vente.  
-          J’ai progressé sur ce point au fil du stage et continuerai à le travailler dans mes prochaines expériences.
+          Rigueur, efficacité et autonomie reconnues. Compétences : Excel/automation, SEO, montage vidéo,
+          social media, relation client (éloquence, écoute, conseil).  
+          Point de progrès : une posture plus “rayonnante” pour dynamiser la vente. Évolution positive sur la fin du stage —
+          je poursuis ce travail pour mes prochaines expériences.
         </p>
       </div>
     </section>
@@ -165,7 +183,7 @@
         </header>
         <ul class="actions stacked">
           <li><a href="mailto:m.roudaut@neoma-bs.com" class="button primary">Envoyer un mail</a></li>
-          <li><a href="https://cotesloges.fr" class="button">Visiter Côté Loges</a></li>
+          <li><a href="https://cotesloges.fr" target="_blank" rel="noopener" class="button">Visiter Côté Loges</a></li>
         </ul>
       </div>
     </section>
@@ -173,25 +191,26 @@
     <!-- Footer -->
     <footer id="footer">
       <ul class="icons">
-        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-        <li><a href="mailto:m.roudaut@neoma-bs.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        <li><a href="#" class="icon brands fa-instagram" aria-label="Instagram"></a></li>
+        <li><a href="#" class="icon brands fa-facebook-f" aria-label="Facebook"></a></li>
+        <li><a href="mailto:m.roudaut@neoma-bs.com" class="icon solid fa-envelope" aria-label="Email"></a></li>
       </ul>
       <ul class="copyright">
         <li>&copy; Martin Roudaut</li>
       </ul>
     </footer>
 
-  </div>
+  </div><!-- /#page-wrapper -->
 
-  <!-- JS minimal -->
+  <!-- JS minimal (pas de jQuery nécessaire) -->
   <script>
+    // Fin du preload
     window.addEventListener('load', function() {
       document.body.classList.remove('is-preload');
       document.documentElement.classList.remove('no-js');
     });
 
+    // Menu latéral
     (function () {
       var page = document.getElementById('page-wrapper');
       var menu = document.getElementById('menu');
@@ -202,20 +221,14 @@
         document.body.classList.toggle('is-menu-visible');
       }
 
-      toggleLinks.forEach(function(a) {
-        a.addEventListener('click', toggleMenu);
-      });
+      toggleLinks.forEach(function(a) { a.addEventListener('click', toggleMenu); });
 
       document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && document.body.classList.contains('is-menu-visible')) {
-          toggleMenu();
-        }
+        if (e.key === 'Escape' && document.body.classList.contains('is-menu-visible')) toggleMenu();
       });
 
       page.addEventListener('click', function(e) {
-        if (document.body.classList.contains('is-menu-visible') && e.target === page) {
-          toggleMenu(e);
-        }
+        if (document.body.classList.contains('is-menu-visible') && e.target === page) toggleMenu(e);
       });
     })();
   </script>

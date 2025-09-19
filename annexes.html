@@ -1,55 +1,41 @@
 <!DOCTYPE html>
-<html lang="fr" class="no-js">
+<html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <title>Rapport de Stage — Annexes</title>
+  <title>Rapport de stage — Annexes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <meta name="description" content="Annexes du rapport : méthodologie, documents, graphiques, références." />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/main2.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-  <!-- CSS fallback (si assets/css/main.css ne charge pas) -->
-  <style>
-  :root{--bg:#2e3842;--ink:#fff;--accent:#21b2a6;--ink-dim:rgba(255,255,255,.6);--brand:#ed4933}
-  *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.65 "Open Sans",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;letter-spacing:.045em}
-  @media (max-width:1680px){body{font-size:13px}}@media (max-width:1280px){body{font-size:12px}}@media (max-width:736px){body{font-size:11px;letter-spacing:.03em}}
-  a{color:inherit;text-decoration:none;border-bottom:1px dotted currentColor}a:hover{border-bottom-color:transparent;text-decoration:underline;text-underline-offset:2px}
-  h1,h2,h3{margin:0 0 1em;font-weight:800;letter-spacing:.22em;text-transform:uppercase;line-height:1}p{margin:0 0 1.5em}
-  .wrapper{padding:6em 0 4em}.wrapper>.inner{width:60em;max-width:90vw;margin:0 auto}
-  @media (max-width:980px){.wrapper{padding:4em 3em 2em}.wrapper>.inner{width:100%}}
-  @media (max-width:736px){.wrapper{padding:3em 2em 1em}}
-  .wrapper.style5{background:#fff;color:#4E4852}.wrapper.style5 h2,.wrapper.style5 h3{color:#2E3842}
-  #header{position:fixed;top:0;left:0;right:0;height:3em;line-height:3em;background:#2e3842;z-index:1000}
-  #header h1{position:absolute;left:1.25em}#header h1 a{border:0}
-  #header nav{position:absolute;right:0}#header nav ul{list-style:none;margin:0;padding:0;white-space:nowrap}#header nav li{display:inline-block}
-  #header nav a{display:block;padding:0 1.5em;border:0;font-size:.8em;letter-spacing:.225em;text-transform:uppercase}
-  #page-wrapper{padding-top:3em}
-  #footer{background:#1d242a;text-align:center;padding:6em 0 4em;margin-top:0}
-  #footer .copyright{list-style:none;padding:0;margin:1em 0 0;color:rgba(255,255,255,.6);font-size:.8em;letter-spacing:.225em;text-transform:uppercase}
-  #footer .copyright li{display:inline-block;margin-left:1em;padding-left:1em;border-left:1px solid rgba(255,255,255,.5)}#footer .copyright li:first-child{margin-left:0;padding-left:0;border:0}
-  </style>
 </head>
 <body class="is-preload">
   <div id="page-wrapper">
-
     <!-- Header -->
     <header id="header">
-      <h1><a href="index.html">Rapport de Stage</a></h1>
-      <nav>
+      <h1><a href="index.html">Rapport de stage</a></h1>
+      <nav id="nav">
         <ul>
-          <li><a href="index.html#entreprise">Entreprise</a></li>
-          <li><a href="index.html#missions">Missions</a></li>
-          <li><a href="index.html#analyse">Analyse</a></li>
-          <li><a href="index.html#auto">Parcours</a></li>
-          <li><a href="annexes.html">Annexes</a></li>
-          <li><a href="index.html#cta" class="button small" style="border:0;">Contact</a></li>
+          <li class="special">
+            <a href="#menu" class="menuToggle"><span>Menu</span></a>
+            <div id="menu">
+              <ul>
+                <li><a href="index.html#banner">Accueil</a></li>
+                <li><a href="index.html#entreprise">Entreprise</a></li>
+                <li><a href="index.html#missions">Missions</a></li>
+                <li><a href="index.html#analyse">Analyse</a></li>
+                <li><a href="index.html#auto">Parcours</a></li>
+                <li><a href="annexes.html">Annexes</a></li>
+                <li><a href="index.html#cta">Contact</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
 
     <!-- Main -->
     <article id="main">
-      <header class="wrapper style1" style="text-align:center;padding:6em 1.5rem 2em;">
+      <header>
         <h2>Annexes</h2>
         <p>Documents complémentaires, graphiques, méthodologie et références.</p>
       </header>
@@ -57,51 +43,42 @@
       <section class="wrapper style5">
         <div class="inner">
           <h3>1. Méthodologie</h3>
-          <p>
-            Veille concurrentielle : identification des concurrents directs (mêmes catalogues/fournisseurs) et indirects (grands distributeurs et artisans).  
-            Automatisation légère sous Excel (formules + scripts) pour consolider les prix publics, comparer les paniers types et suivre les écarts dans le temps.  
-            Analyse SEO : recherche de mots-clés de niche non saturés par les géants — ex. <em>tables en céramique</em>.
-          </p>
+          <p>Détail de la démarche, des outils et du périmètre.</p>
 
           <h3>2. Tableaux & Graphiques</h3>
-          <p>Exports insérables au format PNG/JPG (captures d’Excel/Google Sheets). Chaque visuel doit être accompagné d’un court commentaire (contexte, période, insight).</p>
-          <ul>
-            <li>Courbes d’évolution des prix par concurrent (directs)</li>
-            <li>Tendances de recherche (Google Trends) pour catégories clés</li>
-            <li>Parts estimées des canaux (boutique vs. web) — observées</li>
-          </ul>
+          <p>Intégrer images/exports (PNG/JPG) et leurs commentaires.</p>
 
           <h3>3. Livrables</h3>
           <ul>
-            <li><a href="docs/livrable-a.pdf">Livrable A (exemple)</a></li>
-            <li><a href="docs/livrable-b.pdf">Livrable B (exemple)</a></li>
+            <li><a href="docs/livrable-a.pdf">Livrable A</a></li>
+            <li><a href="docs/livrable-b.pdf">Livrable B</a></li>
           </ul>
 
           <h3>4. Références</h3>
-          <p>
-            Sources internes : PrestaShop (catalogue/commandes), historiques réseaux sociaux (statistiques de compte).  
-            Sources externes : sites concurrents, Google Trends, documentation SEO (mots-clés, SERP).
-          </p>
+          <p>Liste des sources (format court).</p>
         </div>
       </section>
     </article>
 
     <!-- Footer -->
     <footer id="footer">
-      <ul class="icons"></ul>
+      <ul class="icons">
+        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+      </ul>
       <ul class="copyright">
-        <li>&copy; Martin Roudaut — 2025</li>
+        <li>&copy; Martin Roudaut</li>
       </ul>
     </footer>
-
   </div>
 
-  <!-- JS minimal -->
-  <script>
-    window.addEventListener('load', function() {
-      document.body.classList.remove('is-preload');
-      document.documentElement.classList.remove('no-js');
-    });
-  </script>
+  <!-- JS -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

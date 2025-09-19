@@ -4,18 +4,59 @@
   <meta charset="utf-8" />
   <title>Rapport de Stage — Côté Loges</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
-  <!-- Police + Icônes (CDN, fiable sur GitHub Pages) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
-
-  <!-- TON CSS local (assure-toi d’avoir créé assets/css/main.css) -->
+  <meta name="description" content="Rapport de stage — Côté Loges, La Baule. Missions, analyse critique, transformation digitale et compétences développées." />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
 
-  <!-- Fallback si JS désactivé (optionnel) -->
-  <noscript><style>body.is-preload *{animation:none!important;transition:none!important}</style></noscript>
+  <!-- CSS fallback (si assets/css/main.css ne charge pas sur GitHub Pages) -->
+  <style>
+  :root{--bg:#2e3842;--ink:#fff;--accent:#21b2a6;--ink-dim:rgba(255,255,255,.6);--brand:#ed4933}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.65 "Open Sans",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;letter-spacing:.045em}
+  @media (max-width:1680px){body{font-size:13px}}@media (max-width:1280px){body{font-size:12px}}@media (max-width:736px){body{font-size:11px;letter-spacing:.03em}}
+  img{max-width:100%;display:block}a{color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;transition:color .2s,border-color .2s}a:hover{border-bottom-color:transparent;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:2px}
+  h1,h2,h3,h4,h5{margin:0 0 1em;font-weight:800;letter-spacing:.22em;text-transform:uppercase;line-height:1}h2{font-size:1.35em;line-height:1.75}h3{font-size:1.15em;line-height:1.65}p{margin:0 0 2em}
+  ul{margin:0 0 2em;padding-left:1em}ul li{padding-left:.5em}ul.icons{list-style:none;padding:0}ul.icons li{display:inline-block;padding:0 1em 0 0}ul.icons li:last-child{padding-right:0}
+  .wrapper{padding:6em 0 4em}.wrapper>.inner{width:60em;max-width:90vw;margin:0 auto}
+  @media (max-width:980px){.wrapper{padding:4em 3em 2em}.wrapper>.inner{width:100%}}
+  @media (max-width:736px){.wrapper{padding:3em 2em 1em}}
+  .wrapper.style1{background:#21b2a6;color:#c8ece9}.wrapper.style1 h2,.wrapper.style1 h3{color:#fff}
+  .wrapper.style2{background:#2e3842}.wrapper.style3{background:#505393;color:#d3d4e4}.wrapper.style4{background:transparent}.wrapper.style5{background:#fff;color:#4E4852}.wrapper.style5 h2,.wrapper.style5 h3{color:#2E3842}
+  #header{position:fixed;top:0;left:0;right:0;height:3em;line-height:3em;background:#2e3842;z-index:1000}
+  #header h1{position:absolute;left:1.25em}#header h1 a{border:0}
+  #header nav{position:absolute;right:0}#header nav ul{list-style:none;margin:0;padding:0;white-space:nowrap}#header nav li{display:inline-block}
+  #header nav a{display:block;padding:0 1.5em;border:0;font-size:.8em;letter-spacing:.225em;text-transform:uppercase}
+  #page-wrapper{padding-top:3em;transition:opacity .35s}
+  #menu{position:fixed;top:0;right:0;width:20em;max-width:80%;height:100%;background:#21b2a6;color:#fff;padding:3em 2em;transform:translateX(20em);transition:transform .35s;z-index:1001;overflow-y:auto}
+  #menu .close{position:absolute;right:0;top:0;width:7em;height:3em;border:0;background:none;cursor:pointer}
+  #menu ul{list-style:none;margin:0;padding:0}#menu li{margin:.5em 0 0;border-top:1px solid rgba(0,0,0,.15);padding:.5em 0 0}#menu li:first-child{margin-top:0;border-top:0;padding-top:0}
+  #menu a{border:0;display:block;font-size:.8em;letter-spacing:.225em;text-transform:uppercase}
+  body.is-menu-visible #page-wrapper{opacity:.35}body.is-menu-visible #menu{transform:translateX(0)}
+  #banner{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden;padding:0 1.5rem}
+  #banner h2{display:inline-block;font-size:1.75em;padding:.35em 1em;position:relative}
+  #banner h2:before,#banner h2:after{content:"";position:absolute;left:0;right:0;height:2px;background:#fff}#banner h2:before{top:0}#banner h2:after{bottom:0}
+  #banner p{letter-spacing:.225em;text-transform:uppercase}
+  #banner .more{position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:8.5em;width:16em;display:block;border:0;letter-spacing:.225em;text-transform:uppercase}
+  header.major{margin:0 0 3em}header.major h2{display:inline-block;padding-bottom:1em;border-bottom:2px solid currentColor}
+  .features{display:flex;flex-wrap:wrap;justify-content:center;list-style:none;padding:0}
+  .features li{position:relative;width:50%;padding:4em 4em 2em 6em;text-align:left}
+  .features li .icon{position:absolute;left:1.75em;top:2.75em;font-size:1.5em;color:#00ffcc;border:0}
+  .features li:nth-child(odd){background:rgba(0,0,0,.06)}.features li:nth-child(even){background:rgba(0,0,0,.12)}
+  @media (max-width:980px){.features li{padding:3em 2em 1em 2em;text-align:center}.features li .icon{position:relative;left:0;top:0;margin:0 0 1em}}
+  @media (max-width:736px){.features li{width:100%;background:transparent;border-top:2px solid #fff}.features li:first-child{border-top:0}}
+  .spotlight{display:flex;align-items:center}.spotlight .image{width:40%}.spotlight .content{width:60%;padding:2em 4em 1em}.spotlight:nth-child(2n){flex-direction:row-reverse}
+  .spotlight:nth-child(1){background:rgba(0,0,0,.08)}.spotlight:nth-child(2){background:rgba(0,0,0,.16)}.spotlight:nth-child(3){background:rgba(0,0,0,.24)}
+  @media (max-width:1280px){.spotlight .image{width:45%}.spotlight .content{width:55%}}
+  @media (max-width:980px){.spotlight{display:block}.spotlight .image,.spotlight .content{width:100%}.spotlight .content{text-align:center;padding:4em 3em 2em}}
+  @media (max-width:736px){.spotlight .content{padding:3em 2em 1em}}
+  #cta .inner{display:flex;gap:2em;max-width:45em;margin:0 auto;padding:0 1rem}#cta header{width:70%;padding-right:3em}#cta .actions{width:30%}
+  @media (max-width:980px){#cta .inner{display:block;text-align:center}#cta header{width:100%;padding:0}#cta .actions{width:100%;max-width:20em;margin:0 auto}}
+  .button{display:inline-block;text-transform:uppercase;letter-spacing:.225em;border:2px solid #fff;border-radius:3px;padding:.9em 2.75em;line-height:1;border-bottom:none}
+  .button:hover{background:rgba(255,255,255,.15)}.button.primary{background:var(--brand);border-color:var(--brand);color:#fff}.button.primary:hover{background:#ef5e4a}
+  #footer{background:#1d242a;text-align:center;padding:6em 0 4em}#footer .icons a{color:rgba(255,255,255,.6);border:0}#footer .icons a:hover{color:#fff}
+  #footer .copyright{list-style:none;padding:0;margin:1em 0 0;color:rgba(255,255,255,.6);font-size:.8em;letter-spacing:.225em;text-transform:uppercase}
+  #footer .copyright li{display:inline-block;margin-left:1em;padding-left:1em;border-left:1px solid rgba(255,255,255,.5)}#footer .copyright li:first-child{margin-left:0;padding-left:0;border:0}
+  a:focus-visible,.button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  </style>
 </head>
 
 <body class="landing is-preload">
@@ -30,7 +71,7 @@
           <li><a href="#missions">Missions</a></li>
           <li><a href="#analyse">Analyse</a></li>
           <li><a href="#auto">Parcours</a></li>
-          <li><a href="#cta" class="button small">Contact</a></li>
+          <li><a href="#cta" class="button small" style="border:0;">Contact</a></li>
           <li><a href="#menu" class="menuToggle"><span>Menu</span></a></li>
         </ul>
       </nav>
@@ -45,8 +86,8 @@
         <li><a href="#missions">Missions</a></li>
         <li><a href="#analyse">Analyse</a></li>
         <li><a href="#auto">Parcours</a></li>
-        <li><a href="#cta">Contact</a></li>
         <li><a href="annexes.html">Annexes</a></li>
+        <li><a href="#cta">Contact</a></li>
       </ul>
     </nav>
 
@@ -65,27 +106,12 @@
       <div class="inner">
         <header class="major">
           <h2>Côté Loges — L’entreprise</h2>
-          <p>Magasin familial à La Baule, repris par Vincent Carnus et Clément Richer.
-             Anciennement orienté bijoux et vinyles, l’enseigne s’est réinventée en spécialiste du
-             mobilier haut de gamme : qualité et originalité à prix compétitifs.</p>
+          <p>Magasin familial fondé à La Baule, repris par Vincent Carnus et Clément Richer. Anciennement orienté bijoux et vinyles, il s’est réinventé en spécialiste du mobilier haut de gamme avec un positionnement clair : qualité et originalité à prix compétitifs.</p>
         </header>
-
-        <ul class="icons major">
-          <li><span class="icon solid fa-gem major style1"><span class="label">Qualité</span></span></li>
-          <li><span class="icon solid fa-store major style2"><span class="label">Magasin</span></span></li>
-          <li><span class="icon solid fa-users major style3"><span class="label">Clientèle</span></span></li>
-        </ul>
-
         <p>
-          Clientèle variée : habitants de la région, Nantais, Parisiens et étrangers, avec une forte proportion
-          de classes supérieures. Magasin sur 3 étages (grande profondeur), mise en valeur soignée.
-          Modèle achat-revente : fournisseurs Europe/Asie, réception, implantation stratégique, étiquettes Canva,
-          suivi de stock, mise en ligne via PrestaShop.
-        </p>
-
-        <p class="meta">
-          Tuteur : <strong>Vincent Carnus</strong> — Co-gérants : <strong>Vincent Carnus</strong> &amp; <strong>Clément Richer</strong>.<br/>
-          Site : <a href="https://cotesloges.fr" target="_blank" rel="noopener">cotesloges.fr</a>
+          Clientèle variée : habitués de la région (La Baule, Saint-Nazaire, Nantes), Parisiens et étrangers, majoritairement issus des classes supérieures.  
+          Le magasin s’étend sur 3 étages : mise en scène soignée des produits, circulation fluide, et importance du conseil.  
+          Modèle achat-revente : commandes fournisseurs (France, Espagne, Portugal, Vietnam), réception, placement stratégique, étiquettes sur Canva, fiches de stock, et mise en ligne via PrestaShop (<a href="https://cotesloges.fr" target="_blank" rel="noopener">cotesloges.fr</a>).
         </p>
       </div>
     </section>
@@ -98,31 +124,29 @@
         </header>
         <ul class="features">
           <li>
-            <span class="icon solid fa-key"></span>
+            <div class="icon">🔑</div>
             <h3>Autonomie</h3>
-            <p>Dès la 2ᵉ semaine : ouverture/fermeture, organisation et mise en valeur, en autonomie
-               malgré la valeur importante des stocks et la configuration (3 étages, nombreuses portes).</p>
+            <p>Dès la 2ᵉ semaine : ouverture/fermeture, organisation, nettoyage, mise en valeur des produits, en autonomie malgré la valeur importante des stocks et la configuration complexe (3 étages, profondeur, multiples accès).</p>
           </li>
           <li>
-            <span class="icon solid fa-chart-line"></span>
-            <h3>Veille prix & marché</h3>
-            <p>Excel automatisé (Python + ChatGPT) : suivi des prix concurrents directs (mêmes fournisseurs)
-               et indirects (Amazon, Ikea, Maisons du Monde, artisans). Résultat : ajustements tarifaires étayés.</p>
+            <div class="icon">📊</div>
+            <h3>Veille concurrentielle</h3>
+            <p>Excel automatisé (Python + ChatGPT) pour suivre les prix des concurrents directs (mêmes catalogues/fournisseurs) et indirects (Amazon, Ikea, Maisons du Monde, artisans). Résultat : ajustements tarifaires ciblés.</p>
           </li>
           <li>
-            <span class="icon solid fa-bullhorn"></span>
-            <h3>Contenu & Réseaux</h3>
-            <p>Photos/vidéos, montages dynamiques (musique, cuts), retouches (Photoshop/Lightroom).
-               ~+50&nbsp;% d’abonnés, +300&nbsp;% de vues. Impact positif sur la notoriété locale.</p>
+            <div class="icon">📣</div>
+            <h3>Communication</h3>
+            <p>Création de contenus (photos/vidéos), montages dynamiques (cuts, musiques), retouches (Photoshop/Lightroom). <strong>+50 %</strong> d’abonnés, <strong>+300 %</strong> de vues sur les réseaux.</p>
           </li>
           <li>
-            <span class="icon solid fa-pen-nib"></span>
+            <div class="icon">📝</div>
             <h3>SEO & Blog</h3>
-            <p>~50 brouillons d’articles (entretien, tendances), calendrier éditorial.
-               Ciblage “tables en céramique” → ~+100 visites/mois supplémentaires.
-               Trafic web global en forte hausse via ajouts produits + articles.</p>
+            <p>Environ 50 brouillons d’articles (tutoriels d’entretien, tendances) + planning éditorial hebdomadaire (mercredi). Recherche de mots-clés nichés : excellent rendement sur <em>tables en céramique</em> (~100 visites mensuelles supplémentaires).</p>
           </li>
         </ul>
+        <p style="margin-top:2em">
+          Côté site, pic de trafic estimé à <strong>+500 %</strong> grâce à l’augmentation des produits en ligne et aux nouveaux articles. Le site accompagne surtout la décision différée : les clients reviennent commander après réflexion (physique ↔ en ligne).
+        </p>
       </div>
     </section>
 
@@ -132,28 +156,22 @@
         <header class="major">
           <h2>Analyse critique</h2>
         </header>
-
         <section class="spotlight">
           <div class="content">
             <h3>Forces</h3>
-            <p>Souplesse commerciale, qualité de sélection, confiance et responsabilités accordées.
-               Accélération digitale (Instagram/Facebook, PrestaShop, SEO ciblé).</p>
+            <p>Structure agile, forte autonomie, sourcing compétitif (Europe/Asie), mise en scène pointue, adoption d’outils digitaux (PrestaShop, Instagram/Facebook). Confiance accordée rapidement → montée en compétence accélérée.</p>
           </div>
         </section>
-
         <section class="spotlight">
           <div class="content">
-            <h3>Axes d’amélioration</h3>
-            <p>Gagner en visibilité face aux grands acteurs. Mieux convertir le trafic web en ventes (retargeting,
-               fiches produit enrichies, preuves sociales, offres limitées).</p>
+            <h3>Points à améliorer</h3>
+            <p>Visibilité limitée face aux grands acteurs du meuble. Opportunité : mieux convertir le trafic web (optimisation fiches produits, preuve sociale, relances e-mail, retargeting) et amplifier la notoriété locale (UGC, collaborations déco).</p>
           </div>
         </section>
-
         <section class="spotlight">
           <div class="content">
             <h3>Transformation digitale</h3>
-            <p>Progression notable (contenu + SEO). Pistes : Google Ads local, campagnes Meta
-               géolocalisées, UGC, partenariats déco, optimisation du catalogue (schéma, FAQ, avis).</p>
+            <p>Évolutions rapides : enrichissement catalogue en ligne, stratégie social media, SEO de niche. À poursuivre : campagnes Google Ads ciblées, reciblage social, formats vidéo courts, suivi KPI (taux de conversion, ROAS).</p>
           </div>
         </section>
       </div>
@@ -166,10 +184,8 @@
           <h2>Mon parcours et compétences acquises</h2>
         </header>
         <p>
-          Rigueur, efficacité et autonomie reconnues. Compétences : Excel/automation, SEO, montage vidéo,
-          social media, relation client (éloquence, écoute, conseil).  
-          Point de progrès : une posture plus “rayonnante” pour dynamiser la vente. Évolution positive sur la fin du stage —
-          je poursuis ce travail pour mes prochaines expériences.
+          Stage très responsabilisant : rigueur, efficacité, orientation résultat. Compétences techniques (Excel + automatisation légère, SEO, montage vidéo, retouche photo, social media) et humaines (relation client, éloquence, prise d’initiative).  
+          Retour des gérants : travail “chirurgical”, fiable, force de proposition ; à développer : une présence plus rayonnante en surface de vente. Progrès constatés entre le début et la fin du stage — axe à poursuivre.
         </p>
       </div>
     </section>
@@ -179,11 +195,12 @@
       <div class="inner">
         <header>
           <h2>Me contacter</h2>
-          <p>Pour toute question sur mon parcours ou mon stage chez Côté Loges.</p>
+          <p>Tuteur : Vincent Carnus — Co-gérant : Clément Richer<br>
+             Email : <a href="mailto:m.roudaut@neoma-bs.com">m.roudaut@neoma-bs.com</a></p>
         </header>
         <ul class="actions stacked">
           <li><a href="mailto:m.roudaut@neoma-bs.com" class="button primary">Envoyer un mail</a></li>
-          <li><a href="https://cotesloges.fr" target="_blank" rel="noopener" class="button">Visiter Côté Loges</a></li>
+          <li><a href="https://cotesloges.fr" class="button" target="_blank" rel="noopener">Visiter Côté Loges</a></li>
         </ul>
       </div>
     </section>
@@ -191,9 +208,8 @@
     <!-- Footer -->
     <footer id="footer">
       <ul class="icons">
-        <li><a href="#" class="icon brands fa-instagram" aria-label="Instagram"></a></li>
-        <li><a href="#" class="icon brands fa-facebook-f" aria-label="Facebook"></a></li>
-        <li><a href="mailto:m.roudaut@neoma-bs.com" class="icon solid fa-envelope" aria-label="Email"></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
       </ul>
       <ul class="copyright">
         <li>&copy; Martin Roudaut</li>
@@ -202,18 +218,17 @@
 
   </div><!-- /#page-wrapper -->
 
-  <!-- JS minimal (pas de jQuery nécessaire) -->
+  <!-- JS minimal (sans dépendances) -->
   <script>
-    // Fin du preload
+    // Retire l’état preload une fois la page chargée
     window.addEventListener('load', function() {
       document.body.classList.remove('is-preload');
       document.documentElement.classList.remove('no-js');
     });
 
-    // Menu latéral
+    // Menu latéral (ouverture/fermeture)
     (function () {
       var page = document.getElementById('page-wrapper');
-      var menu = document.getElementById('menu');
       var toggleLinks = document.querySelectorAll('a.menuToggle, #menu .close, #menu a');
 
       function toggleMenu(e) {
@@ -221,14 +236,22 @@
         document.body.classList.toggle('is-menu-visible');
       }
 
-      toggleLinks.forEach(function(a) { a.addEventListener('click', toggleMenu); });
-
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && document.body.classList.contains('is-menu-visible')) toggleMenu();
+      toggleLinks.forEach(function(a) {
+        a.addEventListener('click', toggleMenu);
       });
 
+      // Fermer sur Échap
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && document.body.classList.contains('is-menu-visible')) {
+          toggleMenu();
+        }
+      });
+
+      // Fermer si clic sur l’overlay
       page.addEventListener('click', function(e) {
-        if (document.body.classList.contains('is-menu-visible') && e.target === page) toggleMenu(e);
+        if (document.body.classList.contains('is-menu-visible') && e.target === page) {
+          toggleMenu(e);
+        }
       });
     })();
   </script>

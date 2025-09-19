@@ -1,0 +1,43 @@
+/*
+  noscript.css
+  → Feuille de style alternative quand JS est désactivé
+  → Simplifie l’affichage : bannière, menus, transitions désactivées
+*/
+
+body.is-preload * {
+	animation: none !important;
+	transition: none !important;
+}
+
+/* Bannière forcée en visible */
+#banner {
+	padding: 6em 2em 4em 2em;
+	height: auto;
+	min-height: 0;
+}
+#banner h2 {
+	font-size: 1.5em;
+}
+#banner .more {
+	display: none; /* Pas de scroll smooth */
+}
+
+/* Menu latéral visible par défaut */
+#menu {
+	position: static;
+	width: 100%;
+	max-width: 100%;
+	transform: none;
+	transition: none;
+}
+#menu ul {
+	padding: 1em;
+}
+#menu .close {
+	display: none;
+}
+
+/* Désactive l’effet overlay */
+#page-wrapper {
+	opacity: 1 !important;
+}

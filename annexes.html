@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
 <head>
   <meta charset="utf-8" />
   <title>Rapport de Stage — Annexes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <meta name="description" content="Annexes du rapport de stage : méthodologie, graphiques, livrables et références." />
+
+  <!-- Police + Icônes (CDN) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+  <!-- TON CSS local -->
   <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
   <div id="page-wrapper">
-
     <!-- Header -->
     <header id="header">
-      <h1><a href="index.html">Rapport de stage</a></h1>
-      <nav id="nav">
+      <h1><a href="index.html">Rapport de Stage</a></h1>
+      <nav>
         <ul>
-          <li class="special">
-            <a href="#menu" class="menuToggle"><span>Menu</span></a>
-            <div id="menu">
-              <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="annexes.html">Annexes</a></li>
-              </ul>
-            </div>
-          </li>
+          <li><a href="index.html#entreprise">Entreprise</a></li>
+          <li><a href="index.html#missions">Missions</a></li>
+          <li><a href="index.html#analyse">Analyse</a></li>
+          <li><a href="index.html#auto">Parcours</a></li>
+          <li><a href="#menu" class="menuToggle"><span>Menu</span></a></li>
         </ul>
       </nav>
     </header>
+
+    <!-- Menu latéral -->
+    <nav id="menu" aria-label="Menu latéral">
+      <a href="#" class="close" aria-label="Fermer le menu"></a>
+      <ul>
+        <li><a href="index.html#banner">Accueil</a></li>
+        <li><a href="index.html#entreprise">Entreprise</a></li>
+        <li><a href="index.html#missions">Missions</a></li>
+        <li><a href="index.html#analyse">Analyse</a></li>
+        <li><a href="index.html#auto">Parcours</a></li>
+        <li><a href="annexes.html">Annexes</a></li>
+      </ul>
+    </nav>
 
     <!-- Main -->
     <article id="main">
@@ -39,47 +53,51 @@
       <section class="wrapper style5">
         <div class="inner">
           <h3>1. Méthodologie</h3>
-          <p>Démarche suivie : analyse du marché, mise en place de la veille concurrentielle (Excel automatisé, Python, GPT), suivi des réseaux sociaux et SEO.</p>
+          <p>Démarche : veille prix (Python + Excel), sourcing des données concurrents, consolidation hebdo,
+            reporting (graphiques/tables), recommandations tarifaires et SEO (mots-clés d’opportunité).</p>
 
           <h3>2. Tableaux & Graphiques</h3>
-          <p>Exports des comparaisons de prix, tendances parts de marché, évolution du trafic web.</p>
-          <ul>
-            <li><img src="images/graphe1.png" alt="Exemple graphique veille concurrentielle" /></li>
-            <li><img src="images/graphe2.png" alt="Evolution trafic web" /></li>
-          </ul>
+          <p>Exports (PNG/JPG) à intégrer avec légendes et commentaires courts (méthode, lecture, insight, action).</p>
 
           <h3>3. Livrables</h3>
           <ul>
-            <li><a href="docs/veille-concurrents.pdf">Veille des concurrents</a></li>
-            <li><a href="docs/planning-reseaux.pdf">Planning réseaux sociaux</a></li>
+            <li><a href="docs/livrable-a.pdf">Livrable A (exemple)</a></li>
+            <li><a href="docs/livrable-b.pdf">Livrable B (exemple)</a></li>
           </ul>
 
           <h3>4. Références</h3>
-          <p>
-            - Site officiel : <a href="https://cotesloges.fr" target="_blank">cotesloges.fr</a><br>
-            - Articles SEO & réseaux sociaux utilisés pour le stage<br>
-            - Notes internes (confidentielles, non publiées)
-          </p>
+          <p>Sources marché, documentation fournisseurs, bibliographie SEO (format court).</p>
         </div>
       </section>
     </article>
 
     <!-- Footer -->
     <footer id="footer">
+      <ul class="icons">
+        <li><a href="#" class="icon brands fa-instagram" aria-label="Instagram"></a></li>
+        <li><a href="#" class="icon brands fa-facebook-f" aria-label="Facebook"></a></li>
+        <li><a href="mailto:m.roudaut@neoma-bs.com" class="icon solid fa-envelope" aria-label="Email"></a></li>
+      </ul>
       <ul class="copyright">
-        <li>&copy; Martin Roudaut — 2025</li>
-        <li>Design: <a href="http://html5up.net" rel="noopener">HTML5 UP</a></li>
+        <li>&copy; Martin Roudaut</li>
       </ul>
     </footer>
   </div>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+  <!-- JS minimal -->
+  <script>
+    window.addEventListener('load', function() {
+      document.body.classList.remove('is-preload');
+      document.documentElement.classList.remove('no-js');
+    });
+    (function () {
+      var page = document.getElementById('page-wrapper');
+      var toggleLinks = document.querySelectorAll('a.menuToggle, #menu .close, #menu a');
+      function toggleMenu(e){ if(e) e.preventDefault(); document.body.classList.toggle('is-menu-visible'); }
+      toggleLinks.forEach(function(a){ a.addEventListener('click', toggleMenu); });
+      document.addEventListener('keydown', function(e){ if(e.key==='Escape' && document.body.classList.contains('is-menu-visible')) toggleMenu(); });
+      page.addEventListener('click', function(e){ if(document.body.classList.contains('is-menu-visible') && e.target===page) toggleMenu(e); });
+    })();
+  </script>
 </body>
 </html>

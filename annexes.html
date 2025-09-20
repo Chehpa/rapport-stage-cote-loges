@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
 <head>
   <meta charset="utf-8" />
   <title>Rapport de stage — Annexes</title>
@@ -10,24 +10,35 @@
 </head>
 <body class="is-preload">
   <div id="page-wrapper">
+
+    <!-- Header -->
     <header id="header">
       <h1><a href="index.html">Rapport de stage</a></h1>
-      <nav id="nav">
+      <nav>
         <ul>
-          <li class="special">
-            <a href="#menu" class="menuToggle"><span>Menu</span></a>
-            <div id="menu">
-              <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="annexes.html">Annexes</a></li>
-                <li><a href="#footer">Contact</a></li>
-              </ul>
-            </div>
-          </li>
+          <li><a href="index.html#missions">Missions</a></li>
+          <li><a href="index.html#analyse">Analyse</a></li>
+          <li><a href="index.html#auto">Parcours</a></li>
+          <li><a href="#menu" class="menuToggle"><span>Menu</span></a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- Menu latéral -->
+    <nav id="menu" aria-label="Menu latéral">
+      <a href="#" class="close" aria-label="Fermer le menu"></a>
+      <ul>
+        <li><a href="index.html#banner">Accueil</a></li>
+        <li><a href="index.html#entreprise">Entreprise</a></li>
+        <li><a href="index.html#stage-bref">Stage en bref</a></li>
+        <li><a href="index.html#missions">Missions</a></li>
+        <li><a href="index.html#analyse">Analyse</a></li>
+        <li><a href="index.html#auto">Parcours</a></li>
+        <li><a href="index.html#cta">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
     <article id="main">
       <header>
         <h2>Annexes</h2>
@@ -36,38 +47,73 @@
 
       <section class="wrapper style5">
         <div class="inner">
-          <h3>1. Méthodologie</h3>
-          <p>Démarche, outils (Excel, Python, PrestaShop), périmètre.</p>
+          <h3>Méthodologie</h3>
+          <p>Collecte de données concurrents (directs&nbsp;/&nbsp;indirects), structuration dans Excel, automatisations simples (Python), 
+            rendu visuel (graphiques) et synthèse des insights (reco tarifaires et SEO).</p>
 
-          <h3>2. Tableaux & Graphiques</h3>
-          <p>Exports (PNG/JPG) + commentaires.</p>
+          <h3>Tableaux &amp; Graphiques</h3>
+          <p>Exports (PNG/JPG) des courbes de tendances, comparatifs prix, et positions SEO.</p>
 
-          <h3>3. Livrables</h3>
+          <h3>Livrables</h3>
           <ul>
-            <li><a href="docs/livrable-a.pdf">Livrable A</a></li>
-            <li><a href="docs/livrable-b.pdf">Livrable B</a></li>
+            <li><a href="#" aria-disabled="true">Dossier veille prix (à insérer)</a></li>
+            <li><a href="#" aria-disabled="true">Pack articles SEO (à insérer)</a></li>
           </ul>
 
-          <h3>4. Références</h3>
-          <p>Sources (format court).</p>
+          <h3>Références</h3>
+          <ul class="alt">
+            <li>Site de l’entreprise&nbsp;: <a href="https://cotesloges.fr" target="_blank" rel="noopener">cotesloges.fr</a></li>
+            <li>Réseaux sociaux de la marque (Instagram, Facebook).</li>
+            <li>Outils&nbsp;: PrestaShop, Canva, Photoshop, Lightroom, Excel, Python.</li>
+          </ul>
         </div>
       </section>
     </article>
 
+    <!-- Footer -->
     <footer id="footer">
-      <ul class="icons"></ul>
+      <ul class="icons">
+        <li><a href="mailto:m.roudaut@neoma-bs.com" class="icon solid fa-envelope" aria-label="Email"><span class="label">Email</span></a></li>
+      </ul>
       <ul class="copyright">
-        <li>&copy; Martin Roudaut — 2025</li>
+        <li>&copy; Martin Roudaut</li>
       </ul>
     </footer>
   </div>
 
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+  <!-- JS minimal -->
+  <script>
+    window.addEventListener('load', function() {
+      document.body.classList.remove('is-preload');
+      document.documentElement.classList.remove('no-js');
+    });
+
+    (function () {
+      var page = document.getElementById('page-wrapper');
+      var menu = document.getElementById('menu');
+      var toggleLinks = document.querySelectorAll('a.menuToggle, #menu .close, #menu a');
+
+      function toggleMenu(e) {
+        if (e) e.preventDefault();
+        document.body.classList.toggle('is-menu-visible');
+      }
+
+      toggleLinks.forEach(function(a) {
+        a.addEventListener('click', toggleMenu);
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && document.body.classList.contains('is-menu-visible')) {
+          toggleMenu();
+        }
+      });
+
+      page.addEventListener('click', function(e) {
+        if (document.body.classList.contains('is-menu-visible') && e.target === page) {
+          toggleMenu(e);
+        }
+      });
+    })();
+  </script>
 </body>
 </html>

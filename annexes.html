@@ -19,24 +19,10 @@
           <li><a href="index.html#missions">Missions</a></li>
           <li><a href="index.html#analyse">Analyse</a></li>
           <li><a href="index.html#auto">Parcours</a></li>
-          <li><a href="#menu" class="menuToggle"><span>Menu</span></a></li>
+          <li><a href="index.html#cta" class="button small">Contact</a></li>
         </ul>
       </nav>
     </header>
-
-    <!-- Menu latéral -->
-    <nav id="menu" aria-label="Menu latéral">
-      <a href="#" class="close" aria-label="Fermer le menu"></a>
-      <ul>
-        <li><a href="index.html#banner">Accueil</a></li>
-        <li><a href="index.html#entreprise">Entreprise</a></li>
-        <li><a href="index.html#stage-bref">Stage en bref</a></li>
-        <li><a href="index.html#missions">Missions</a></li>
-        <li><a href="index.html#analyse">Analyse</a></li>
-        <li><a href="index.html#auto">Parcours</a></li>
-        <li><a href="index.html#cta">Contact</a></li>
-      </ul>
-    </nav>
 
     <!-- Main -->
     <article id="main">
@@ -62,7 +48,7 @@
 
           <h3>Références</h3>
           <ul class="alt">
-            <li>Site de l’entreprise&nbsp;: <a href="https://cotesloges.fr" target="_blank" rel="noopener">cotesloges.fr</a></li>
+            <li>Site de l’entreprise&nbsp;: <a href="https://www.coteloges.fr/" target="_blank" rel="noopener">coteloges.fr</a></li>
             <li>Réseaux sociaux de la marque (Instagram, Facebook).</li>
             <li>Outils&nbsp;: PrestaShop, Canva, Photoshop, Lightroom, Excel, Python.</li>
           </ul>
@@ -81,39 +67,12 @@
     </footer>
   </div>
 
-  <!-- JS minimal -->
+  <!-- JS minimal : juste le preload -->
   <script>
     window.addEventListener('load', function() {
       document.body.classList.remove('is-preload');
       document.documentElement.classList.remove('no-js');
     });
-
-    (function () {
-      var page = document.getElementById('page-wrapper');
-      var menu = document.getElementById('menu');
-      var toggleLinks = document.querySelectorAll('a.menuToggle, #menu .close, #menu a');
-
-      function toggleMenu(e) {
-        if (e) e.preventDefault();
-        document.body.classList.toggle('is-menu-visible');
-      }
-
-      toggleLinks.forEach(function(a) {
-        a.addEventListener('click', toggleMenu);
-      });
-
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && document.body.classList.contains('is-menu-visible')) {
-          toggleMenu();
-        }
-      });
-
-      page.addEventListener('click', function(e) {
-        if (document.body.classList.contains('is-menu-visible') && e.target === page) {
-          toggleMenu(e);
-        }
-      });
-    })();
   </script>
 </body>
 </html>

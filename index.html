@@ -12,7 +12,7 @@
 <body class="landing is-preload">
   <div id="page-wrapper">
 
-    <!-- Header (menu unique) -->
+    <!-- Header (nav simple) -->
     <header id="header" class="alt">
       <h1><a href="index.html" aria-label="Accueil">Rapport de stage</a></h1>
       <nav>
@@ -23,25 +23,9 @@
           <li><a href="#analyse">Analyse</a></li>
           <li><a href="#auto">Parcours</a></li>
           <li><a href="#cta" class="button small">Contact</a></li>
-          <li><a href="#menu" class="menuToggle"><span>Menu</span></a></li>
         </ul>
       </nav>
     </header>
-
-    <!-- Menu latéral -->
-    <nav id="menu" aria-label="Menu latéral">
-      <a href="#" class="close" aria-label="Fermer le menu"></a>
-      <ul>
-        <li><a href="#banner">Accueil</a></li>
-        <li><a href="#entreprise">Entreprise</a></li>
-        <li><a href="#stage-bref">Stage en bref</a></li>
-        <li><a href="#missions">Missions</a></li>
-        <li><a href="#analyse">Analyse</a></li>
-        <li><a href="#auto">Parcours</a></li>
-        <li><a href="#cta">Contact</a></li>
-        <li><a href="annexes.html">Annexes</a></li>
-      </ul>
-    </nav>
 
     <!-- Banner -->
     <section id="banner" role="banner" aria-label="Hero">
@@ -99,7 +83,7 @@
         <h2>Mon stage en bref</h2>
         <div class="stage-keyfacts">
           <ul>
-            <li><strong>Entreprise&nbsp;:</strong> Côté Loges (La&nbsp;Baule) — <a href="https://cotesloges.fr" target="_blank" rel="noopener">cotesloges.fr</a></li>
+            <li><strong>Entreprise&nbsp;:</strong> Côté Loges (La&nbsp;Baule) — <a href="https://www.coteloges.fr/" target="_blank" rel="noopener">coteloges.fr</a></li>
             <li><strong>Tuteur&nbsp;:</strong> Vincent Carnus</li>
             <li><strong>Période&nbsp;:</strong> 23&nbsp;juin → 31&nbsp;août&nbsp;2024 (10&nbsp;semaines)</li>
             <li><strong>Secteur&nbsp;:</strong> Mobilier haut de gamme / retail &amp; e-commerce</li>
@@ -294,13 +278,13 @@
         </header>
         <ul class="actions stacked">
           <li><a href="mailto:m.roudaut@neoma-bs.com" class="button primary">Envoyer un mail</a></li>
-          <li><a href="https://cotesloges.fr" target="_blank" rel="noopener" class="button">Visiter Côté&nbsp;Loges</a></li>
+          <li><a href="https://www.coteloges.fr/" target="_blank" rel="noopener" class="button">Visiter Côté&nbsp;Loges</a></li>
           <li><a href="annexes.html" class="button">Voir les annexes</a></li>
         </ul>
       </div>
     </section>
 
-    <!-- Footer (sans la mention de design) -->
+    <!-- Footer -->
     <footer id="footer">
       <ul class="icons">
         <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" class="icon brands fa-instagram" aria-label="Instagram"><span class="label">Instagram</span></a></li>
@@ -314,39 +298,12 @@
 
   </div>
 
-  <!-- JS minimal -->
+  <!-- JS minimal : juste le preload -->
   <script>
     window.addEventListener('load', function() {
       document.body.classList.remove('is-preload');
       document.documentElement.classList.remove('no-js');
     });
-
-    (function () {
-      var page = document.getElementById('page-wrapper');
-      var menu = document.getElementById('menu');
-      var toggleLinks = document.querySelectorAll('a.menuToggle, #menu .close, #menu a');
-
-      function toggleMenu(e) {
-        if (e) e.preventDefault();
-        document.body.classList.toggle('is-menu-visible');
-      }
-
-      toggleLinks.forEach(function(a) {
-        a.addEventListener('click', toggleMenu);
-      });
-
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && document.body.classList.contains('is-menu-visible')) {
-          toggleMenu();
-        }
-      });
-
-      page.addEventListener('click', function(e) {
-        if (document.body.classList.contains('is-menu-visible') && e.target === page) {
-          toggleMenu(e);
-        }
-      });
-    })();
   </script>
 </body>
 </html>
